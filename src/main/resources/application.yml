@@ -1,0 +1,24 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+  application:
+    name: annonymous
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
+  config:
+    activate:
+      on-profile: local
+eureka:
+   client:
+     serviceUrl:
+         defaultZone: http://localhost:8761/eureka
+server:
+  port: 8099
+kafka:
+  bootstrap-servers: localhost:9092
+  default-topic: annonymous-event
